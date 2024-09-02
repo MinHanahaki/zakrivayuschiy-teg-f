@@ -297,11 +297,11 @@
             Вставьте дискету, чтобы продолжить
           </span>
         </div>
-        <form method="dialog">
-          <button type="submit" class="button">
-            <span class="button__text">ОК</span>
-          </button>
-        </form>
+        <button type="submit"
+                class="button"
+                onclick="window['save-dialog'].close()">
+          <span class="button__text">ОК</span>
+        </button>
       </dialog>
     </main>
     <script src="./scripts/like.js"></script>
