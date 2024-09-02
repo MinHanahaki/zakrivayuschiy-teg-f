@@ -304,7 +304,7 @@
   }
 }
 
-.dialog {
+.dialog[open] {
   position: fixed;
   inset: 0;
   transition: opacity 0.3s ease-in-out;
