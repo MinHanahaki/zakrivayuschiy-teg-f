@@ -19,10 +19,11 @@
   min-block-size: 100dvb;
   font-family: var(--main-font), sans-serif;
   font-variation-settings: 'wght' var(--main-font-weight);
-  background: var(--background);
   color: var(--main-color);
+  background: var(--background);
   background-image: var(--bg-gradient);
   background-size: cover;
+  background-attachment: fixed;
   padding-block: 100px;
 }
 
@@ -58,6 +59,7 @@
 
 .header__title h2 {
   font-size: clamp(0.875rem, 0.226rem + 2.7692vw, 1.4375rem);
+  text-transform: uppercase;
 }
 
 .theme-menu__list {
@@ -66,6 +68,8 @@
   flex-direction: column;
   gap: 14px;
   font-family: var(--accent-font), sans-serif;
+  font-size: 14px;
+  line-height: 14px;
 }
 
 .theme-menu__button {
@@ -73,6 +77,7 @@
   border: none;
   padding: 0;
   transition: opacity ease 0.3s;
+  block-size: 14px;
 }
 
 .theme-menu__button:hover {
@@ -130,6 +135,8 @@
 
 .card__image {
   position: relative;
+  border-top: 2px solid var(--main-color);
+  border-bottom: 2px solid var(--main-color);
 }
 
 .card__label {
@@ -159,7 +166,10 @@
 }
 
 .card__image img {
+  display: block;
   width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .card__image--filter-hue-rotate img {
@@ -298,6 +308,13 @@
   }
   .save-button .button {
     flex-direction: column;
+  }
+  .save-button svg {
+    width: 28px;
+    height: 28px;
+  }
+  .card__title {
+    padding: 3.5px 10px 5.5px;
   }
   .card__label {
     right: 13px;
