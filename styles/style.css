@@ -78,6 +78,7 @@
   padding: 0;
   transition: opacity ease 0.3s;
   block-size: 14px;
+  text-transform: uppercase;
 }
 
 .theme-menu__button:hover {
@@ -297,16 +298,15 @@
 }
 
 .save-button {
-  display: flex;
-  justify-content: center;
   margin-block-start: 50px;
+  margin-inline: auto;
 }
 
 @media (width <= 375px) {
   .save-button {
     margin-block-start: 52px;
   }
-  .save-button .button {
+  .save-button {
     flex-direction: column;
   }
   .save-button svg {
